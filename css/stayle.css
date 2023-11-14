@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+.container {
+width: 100%;
+}
+.container .top {
+    background-color: hsl(193, 100%, 96%);
+    padding: 15px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+@media (max-width: 768px) {
+    .one {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+    }
+}
+
+.one button {
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 10rem;
+    transition: 0.6s ease;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .one button {
+        width: 35%;
+        padding: 0.7rem;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 1px 1px 10px #e6e5e5;
+    }
+}
+.one button:hover {
+    box-shadow: 0px 1px 11px 1px rgb(192 192 192 / 62%);
+    cursor: pointer;
+    opacity: 50%;
+}
+.land {
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+}
+@media (max-width: 768px) {
+    .land {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+.one img {
+    width: 20%;
+}
+@media (max-width: 768px) {
+    .one img { 
+        width: 40%;
+    }
+}
+.land .left h2 {
+    font-size: 2.2rem;
+    margin: 1.5rem;
+}
+.land .left p {
+    font-size: 0.8rem;
+    margin: 1.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+@media (max-width: 768px) {
+    .land .left p {
+   font-size: 1.7rem;
+   color: hsl(207, 9%, 20%); 
+    }
+}
+.land .left button { 
+    background-color: hsl(322, 100%, 66%);
+    margin: 1.5rem;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    width: 50%;
+    transition: 0.6s ease;
+}
+@media (max-width: 768px) {
+    .land .left button {
+   font-weight: bold;
+    }
+}
+.land .left button:hover {
+    opacity: 50%;
+    cursor: pointer;
+    box-shadow: 0px 1px 12px 1px #b481b6;
+}
+section { 
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 4px #f1e7e7;
+    padding: 3rem;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    section {
+display: flex;
+flex-direction: column-reverse;
+    }
+}
+section .text { 
+    margin:3rem ;
+}
+@media (max-width: 768px) {
+    section .text {
+        width: 100%;
+        text-align: center;
+    }   
+}
+section .text p {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 2rem;
+    opacity: 50%;
+}
+@media (max-width: 768px) {
+    section .text p {
+      font-size: 0.77rem;
+    }   
+}
+.your {
+    margin-bottom: 5rem;
+}
+footer { 
+    background-color:hsl(192, 100%, 9%);
+    color: #fff;
+    margin-top: 15rem;
+    position: relative;
+    padding: 5rem;
+    display: flex;
+    font-family: 'open sans';
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start;
+        gap: 1rem;
+    }   
+}
+.filter-white { 
+    filter: invert(99%) sepia(30%) saturate(442%) hue-rotate(194deg) brightness(120%) contrast(100%);
+}
+.parent {
+    position: relative;
+}
+.ready {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0px -1px 5px #d2c2c2;
+    padding: 2rem;
+    left: 30%;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .ready {
+        left: 5%;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }   
+}
+.ready h1 {
+    font-size: 25px;
+}
+@media (max-width: 768px) {
+    .ready h1{
+        font-size: 1rem;
+        font-weight: bold;
+    }   
+}
+.ready button{
+    background-color: hsl(322, 100%, 66%);
+    margin: 1.5rem;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    width: 50%;
+    transition: 0.6s ease; 
+}
+@media (max-width: 768px) {
+    .ready button{
+      font-weight: bold;
+      width: 60%;
+    }   
+}
+.ready button:hover {
+    opacity: 50%;
+    cursor: pointer;
+    box-shadow: 0px 1px 12px 1px #b481b6;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+.logo img { 
+    width: 20%;
+}
+@media (max-width: 768px) {
+    .logo img {
+     width: 50%;
+    }   
+}
+.location,.phone,.email {
+    display: flex;
+   gap: 1rem;
+   margin-top: 1rem;
+}
+.location p,.phone p , .email p { 
+    font-size: 15px;
+    width: 70%;
+    color: hsl(210, 38%, 82%);
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-right: 3rem;
+    width: 23%;
+}
+.about p {
+    width: 100%;
+    font-size: 0.8rem;
+    color: hsl(210, 38%, 82%);
+}
+.about p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.career { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-right: 3rem;
+    width: 23%; 
+}
+.career p {
+    width: 100%;
+    font-size: 0.8rem;
+    color: hsl(210, 38%, 82%); 
+}
+.last { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .last {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 3rem;
+    }   
+}
+.last .social-icon { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.last .social-icon i:hover {
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+.copy { 
+    font-size: 0.5rem;
+    color: hsl(210, 38%, 82%); 
+
+}
+
